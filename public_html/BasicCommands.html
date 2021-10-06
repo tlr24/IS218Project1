@@ -35,16 +35,19 @@
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
+  <body class="d-flex text-center text-white bg-dark">
     
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
       <h3 class="float-md-start mb-0">Commands</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="#">GIT</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="git.html">Git</a>
+        <a class="nav-link active" aria-current="page" href="Bootstrap.html">Bootstrap</a>
+        <a class="nav-link" href="AzureCloud.html">Azure</a>
         <a class="nav-link" href="docker.html">Docker</a>
+        <a class="nav-link" href="linux.html">Linux</a>
       </nav>
     </div>
   </header>
@@ -75,17 +78,21 @@
   <p>
     docker compose up - start or restart all the services defined in a docker-compose.yml. <br>
     docker compose down - stops and removes container <br>
-    Docker ps - lists running containers <br>
-    And docker kill <container id> - shuts the container off <br>
+    docker ps - lists running containers <br>
+    docker kill <container id> - shuts the container off <br>
+	docker rm < container-id > - deletes the container<br>
+	docker build -t < container > . - Builds a container image<br>
+	docker run -dp 80:80 < container > - Runs the container in the background at the specified port numbers<br>
   </p></h1></h1>
+  <!--
     <p class="lead">Learn commands first.</p>
     <p class="lead">
       <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Basic Commands</a>
-    </p>
+    </p>-->
   </main>
 
   <footer class="mt-auto text-white-50">
-    <p>Creators: <a href="https://getbootstrap.com/" class="text-white">Syed & Talaar</a></p>
+    <p>Creators: <a href="https://github.com/tlr24/IS218Project1" class="text-white">Syed & Talaar</a></p>
   </footer>
 </div>
 
